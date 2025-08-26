@@ -80,7 +80,67 @@
 </section>
 
 
-<!-- Teaser video-->
+
+<!-- End teaser video -->
+
+<h1 class="title has-text-centered" style="margin-bottom: 1rem;">
+  Symplectic Euler
+</h1>
+
+<h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
+  These are animations and spectra generated with the <strong>Symplectic Euler</strong> method and rendered with 
+  <strong>waveBlender</strong>. Listeners are positioned differently in each video.
+</h2>
+
+<div class="content has-text-centered" style="margin-top: 1rem;">
+  <p><strong>Simulation Parameters:</strong></p>
+  <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+    <li>Young’s Modulus: \( 1.0 \times 10^{10} \,\text{Pa} \)</li>
+    <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \,\text{s} \)</li>
+    <li>Plate Thickness: \( 1.0 \times 10^{-3} \,\text{m} \)</li>
+    <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
+    <li>Mesh Resolution: 1000</li>
+  </ul>
+</div>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <!-- Front view -->
+      <div class="has-text-centered">
+        <video controls style="max-width:100%; border-radius:8px; margin-bottom: 1rem;">
+          <source src="static/videos/tapping_wb_front.mp4" type="video/mp4">
+        </video>
+        <figure class="image">
+          <img src="static/images/tapping_se_front.png" alt="Simulation snapshot (front listener)" style="max-width:100%; border-radius:8px;">
+          <figcaption class="has-text-centered" style="margin-top: 0.5rem; font-style: italic;">
+            Listener positioned at the front of the vibrating plate.
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Side view -->
+      <div class="has-text-centered" style="margin-top: 2rem;">
+        <video controls style="max-width:100%; border-radius:8px; margin-bottom: 1rem;">
+          <source src="static/videos/tapping_wb_side.mp4" type="video/mp4">
+        </video>
+        <figure class="image">
+          <img src="static/images/tapping_se_side.png" alt="Simulation snapshot (side listener)" style="max-width:100%; border-radius:8px;">
+          <figcaption class="has-text-centered" style="margin-top: 0.5rem; font-style: italic;">
+            Listener positioned at one side of the vibrating plate.
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- End teaser video -->
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -95,66 +155,7 @@
     </div>
   </div>
 </section>
-
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video poster="" id="tree" controls height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/tapping_wb_front.mp4"
-          type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-        </h2>
-      </div>
-    </div>
-  </section>
-<!-- End teaser video -->
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-vcentered">
-        
-        <!-- Left column: video -->
-        <div class="column has-text-centered">
-          <video controls style="max-width:100%; border-radius:8px;">
-            <source src="static/videos/tapping_wb_side.mp4" type="video/mp4">
-          </video>
-        </div>
-        
-        <!-- Right column: figure -->
-        <div class="column has-text-centered">
-          <figure class="image">
-            <img src="static/images/tapping_se_side.png" style="max-width:100%; border-radius:8px;">
-          </figure>
-        </div>
-
-      </div>
-
-      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
-        This animation is computed using the <strong>Symplectic Euler</strong> method, with sound synthesized via <strong>waveBlender</strong>. 
-        The virtual listener is positioned at one side of the vibrating plate.
-      </h2>
-
-      <div class="content has-text-centered" style="margin-top: 1rem;">
-        <p><strong>Simulation Parameters:</strong></p>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Young’s Modulus: \( 1.0 \times 10^{10} \, \text{Pa} \)</li>
-          <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \, \text{s} \)</li>
-          <li>Plate Thickness: \( 1.0 \times 10^{-3} \, \text{m} \)</li>
-          <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
-          <li>Mesh Resolution: 1000</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- End teaser video -->
-
-
+  
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
