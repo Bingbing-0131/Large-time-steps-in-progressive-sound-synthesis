@@ -80,10 +80,10 @@
 
 
 
-<!-- End teaser video -->
 <h1 class="title has-text-centered" style="margin-bottom: 1rem;">
   Symplectic Euler
 </h1>
+
 <h2 class="subtitle has-text-centered" style="margin: 1.5rem auto; max-width: 800px; line-height: 1.6;">
   These are animations and spectra generated with the 
   <strong>Symplectic Euler</strong> method and rendered with 
@@ -107,48 +107,46 @@
     <div class="hero-body">
 
       <!-- Front view -->
-      <div class="has-text-centered">
+      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
         <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
           <source src="static/videos/tapping_wb_front.mp4" type="video/mp4">
         </video>
         <figure class="image" style="max-width: 700px; margin: 0 auto;">
           <img src="static/images/tapping_se_front.png" 
-               alt="Simulation snapshot (front listener)" 
+               alt="Simulation snapshot: front listener" 
                style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" 
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            Listener positioned at the front of the vibrating plate.
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            Listener positioned at the <strong>front</strong> of the vibrating plate.
           </figcaption>
         </figure>
       </div>
 
       <!-- Side view -->
-      <div class="has-text-centered" style="margin-top: 2.5rem;">
+      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
         <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
           <source src="static/videos/tapping_wb_side.mp4" type="video/mp4">
         </video>
         <figure class="image" style="max-width: 700px; margin: 0 auto;">
           <img src="static/images/tapping_se_side.png" 
-               alt="Simulation snapshot (side listener)" 
+               alt="Simulation snapshot: side listener" 
                style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" 
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            Listener positioned at one side of the vibrating plate.
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            Listener positioned at <strong>one side</strong> of the vibrating plate.
           </figcaption>
         </figure>
       </div>
 
-      <div class="has-text-centered" style="margin-top: 2.5rem;">
+      <!-- No damping -->
+      <div class="has-text-centered">
         <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
           <source src="static/videos/tapping_forward_final_web.mp4" type="video/mp4">
         </video>
         <figure class="image" style="max-width: 700px; margin: 0 auto;">
           <img src="static/images/tapping_forward_final.png" 
-               alt="Simulation snapshot (side listener)" 
+               alt="Simulation snapshot: no damping" 
                style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" 
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            A simulation without damping, showing the energy conservation of the Symplectic Euler.
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            Simulation <strong>without damping</strong>, showing energy conservation of the Symplectic Euler method.
           </figcaption>
         </figure>
       </div>
@@ -157,69 +155,66 @@
   </div>
 </section>
 
-<!-- End teaser video -->
+<!-- End Symplectic Euler section -->
 
 <h1 class="title has-text-centered" style="margin-bottom: 1rem;">
   Implicit Euler
 </h1>
+
 <h2 class="subtitle has-text-centered" style="margin: 1.5rem auto; max-width: 800px; line-height: 1.6;">
   These are animations and spectra generated with the 
-  <strong>Implicit Euler</strong> method, which has much numerical dampings.
+  <strong>Implicit Euler</strong> method, which introduces strong numerical damping.
 </h2>
-
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
 
-      <!-- Front view -->
-      <div class="has-text-centered">
+      <!-- Back view -->
+      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
         <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
           <source src="static/videos/tapping_back_final_web.mp4" type="video/mp4">
         </video>
         <figure class="image" style="max-width: 700px; margin: 0 auto;">
           <img src="static/images/tapping_back.png" 
-               alt="Simulation snapshot (front listener)" 
+               alt="Simulation snapshot: back listener" 
                style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" 
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            The same tapping example having the same paramter with the previous Symplectic Euler method.
-            No artificial damping here, but numerical damping is significant.
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            Same tapping example as in Symplectic Euler, with identical parameters. <br>
+            No artificial damping, but significant <strong>numerical damping</strong> occurs.
           </figcaption>
         </figure>
       </div>
 
-      <div class="has-text-centered">
+      <!-- Ball -->
+      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
         <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
           <source src="static/videos/ball.mp4" type="video/mp4">
         </video>
         <figure class="image" style="max-width: 700px; margin: 0 auto;">
           <img src="static/images/ball.png" 
-               alt="Simulation snapshot (front listener)" 
+               alt="Simulation snapshot: ball falling" 
                style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" 
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            A ball falling example. The bouncing sound are heard.
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            A <strong>ball falling</strong> example, producing audible bouncing sounds.
           </figcaption>
         </figure>
       </div>
 
+      <!-- Bowl -->
       <div class="has-text-centered">
         <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
           <source src="static/videos/bowl.mp4" type="video/mp4">
         </video>
         <figure class="image" style="max-width: 700px; margin: 0 auto;">
           <img src="static/images/bowl.png" 
-               alt="Simulation snapshot (front listener)" 
+               alt="Simulation snapshot: bowl falling" 
                style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" 
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            A bowl falling example, numerous clicking sound are heard.
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            A <strong>bowl falling</strong> example, producing numerous clicking sounds.
           </figcaption>
         </figure>
       </div>
-
-  
 
     </div>
   </div>
@@ -232,27 +227,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-
-      <!-- Standard membrane energy -->
-      <div class="has-text-centered" style="margin-bottom: 2rem;">
-        <video controls playsinline preload="metadata" aria-label="Symplectic Euler with standard membrane energy"
-               style="max-width:70%; border-radius:8px; margin-bottom: 1rem;">
-          <source src="static/videos/tapping_normal_combine.mp4" type="video/mp4">
-        </video>
-
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
-          <img src="static/images/tapping_normal.png"
-               alt="Snapshot: Symplectic Euler with standard membrane energy"
-               loading="lazy"
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered"
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
-            Symplectic Euler with <strong>standard membrane energy</strong>.
-          </figcaption>
-        </figure>
-      </div>
-
-    <div class="content has-text-centered" style="margin: 1rem auto; max-width: 600px; line-height: 1.8;">
+      <div class="content has-text-centered" style="margin: 1rem auto; max-width: 600px; line-height: 1.8;">
       <p><strong>Simulation Parameters:</strong></p>
       <ul style="list-style: none; padding: 0; margin: 0;">
         <li>Young’s Modulus: \( 1.0 \times 10^{10} \,\text{Pa} \)</li>
@@ -262,6 +237,26 @@
         <li>Mesh Resolution: 1000</li>
       </ul>
     </div>
+
+      <!-- Standard membrane energy -->
+            <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+        <video controls playsinline preload="metadata" aria-label="Symplectic Euler with standard membrane energy"
+               style="max-width:70%; border-radius:8px; margin-bottom: 1rem;">
+          <source src="static/videos/tapping_normal_combine.mp4" type="video/mp4">
+        </video>
+        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+          <img src="static/images/tapping_normal.png"
+               alt="Snapshot: Symplectic Euler with standard membrane energy"
+               loading="lazy"
+               style="max-width:100%; border-radius:8px;">
+          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+            Symplectic Euler with <strong>standard membrane energy</strong>.
+          </figcaption>
+        </figure>
+      </div>
+
+
+    
 
       <!-- Reduced membrane energy -->
       <div class="has-text-centered">
