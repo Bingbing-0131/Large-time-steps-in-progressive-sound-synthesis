@@ -172,18 +172,31 @@
         <!-- Right column: figure -->
         <div class="column has-text-centered">
           <figure class="image">
-            <img src="static/images/tapping_se_side.jpg" alt="Example figure" style="max-width:100%; border-radius:8px;">
+            <img src="static/images/tapping_se_side.jpg" alt="Rendered plate vibration" style="max-width:100%; border-radius:8px;">
           </figure>
         </div>
 
       </div>
 
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
+        This animation is computed using the <strong>Symplectic Euler</strong> method, with sound synthesized via <strong>waveBlender</strong>. 
+        The virtual listener is positioned at one side of the vibrating plate.
       </h2>
+
+      <div class="content has-text-centered" style="margin-top: 1rem;">
+        <p><strong>Simulation Parameters:</strong></p>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li>Young’s Modulus: \( 1.0 \times 10^{10} \, \text{Pa} \)</li>
+          <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \, \text{s} \)</li>
+          <li>Plate Thickness: \( 1.0 \times 10^{-3} \, \text{m} \)</li>
+          <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
+          <li>Mesh Resolution: 1000</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
+
 <!-- End teaser video -->
 
 
