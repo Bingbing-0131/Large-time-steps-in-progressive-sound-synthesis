@@ -42,6 +42,55 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+  /* Make titles scale nicely across devices */
+  h1.title.publication-title {
+    font-size: clamp(1.6rem, 4vw + 0.6rem, 2.75rem);
+    line-height: 1.15;
+  }
+  /* Generic title/subtitle scaling */
+  h1.title { font-size: clamp(1.4rem, 3.5vw + 0.5rem, 2.2rem); }
+  h2.subtitle { font-size: clamp(1.05rem, 2.5vw + 0.5rem, 1.35rem); }
+
+  /* Keep paragraphs and lists from spanning full width on large screens,
+     but let them be full width on phones */
+  .narrow-text {
+    margin: 1rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 0 1rem; /* side padding for small screens */
+  }
+
+  /* Author line: flexible, wraps and adds space on mobile */
+  .publication-authors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .6rem .9rem; /* row/column gaps */
+  }
+  .publication-authors .author-block { white-space: nowrap; }
+
+  /* Media blocks: videos and images scale to container width */
+  .media-block video,
+  .media-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  /* Add consistent spacing between media blocks */
+  .media-block { margin-bottom: 2rem; }
+
+  /* Code blocks scroll horizontally on small screens */
+  pre { overflow-x: auto; }
+  pre code { font-size: 0.9rem; }
+
+  /* Tighter vertical spacing on small screens */
+  @media (max-width: 768px) {
+    .hero .hero-body { padding: 1.5rem 1rem; }
+    .media-block { margin-bottom: 1.5rem; }
+  }
+</style>
+
 </head>
 <body>
 
@@ -51,7 +100,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Large Time Steps in Progressive Synthesis</h1>
+            <h1 class="title is-1 publication-title is-size-3-tablet is-size-4-mobile">
+  Large Time Steps in Progressive Synthesis
+</h1>
+
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -296,6 +348,21 @@
       <em>Progressive Dynamics for Cloth and Shell Animation.</em> 
       <strong>ACM Transactions on Graphics (TOG)</strong>, 43(4), 1–18. 
       ACM New York, NY, USA.
+    </p>
+    <p class="is-size-5">
+    Minchen Li, Danny M. Kaufman, and Chenfanfu Jiang. 2021. 
+    Codimensional incremental potential contact. ACM Trans. Graph. 40, 4, Article 170 (August 2021), 24 pages. 
+    https://doi.org/10.1145/3450626.3459767
+    </p>
+    <p class="is-size-5">
+    Kangrui Xue, Jui-Hsien Wang, Timothy Langlois, and Doug James. 2024. 
+    WaveBlender: Practical Sound-Source Animation in Blended Domains. 
+    In SIGGRAPH Asia 2024 Conference Papers (SA '24). Association for Computing Machinery, New York, NY, USA, 
+    Article 134, 1–10. https://doi.org/10.1145/3680528.3687696
+    </p>
+    <p class="is-size-5">
+    Jeffrey N. Chadwick, Steven S. An, and Doug L. James. 2009. Harmonic shells: a practical nonlinear sound 
+    model for near-rigid thin shells. ACM Trans. Graph. 28, 5 (December 2009), 1–10. https://doi.org/10.1145/1618452.1618465
     </p>
   </div>
 </section>
