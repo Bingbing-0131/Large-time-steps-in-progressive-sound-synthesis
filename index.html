@@ -2,215 +2,184 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
+
+  <!-- Social meta (fill these with your real values) -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION META TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
+
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>Large Time Steps in Progressive Synthesis</title>
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
   <style>
-  /* Make titles scale nicely across devices */
-  h1.title.publication-title {
-    font-size: clamp(1.6rem, 4vw + 0.6rem, 2.75rem);
-    line-height: 1.15;
-  }
-  /* Generic title/subtitle scaling */
-  h1.title { font-size: clamp(1.4rem, 3.5vw + 0.5rem, 2.2rem); }
-  h2.subtitle { font-size: clamp(1.05rem, 2.5vw + 0.5rem, 1.35rem); }
+    /* Title scaling */
+    h1.title.publication-title {
+      font-size: clamp(1.6rem, 4vw + 0.6rem, 2.75rem);
+      line-height: 1.15;
+    }
+    h1.title { font-size: clamp(1.4rem, 3.5vw + 0.5rem, 2.2rem); }
+    h2.subtitle { font-size: clamp(1.05rem, 2.5vw + 0.5rem, 1.35rem); }
 
-  /* Keep paragraphs and lists from spanning full width on large screens,
-     but let them be full width on phones */
-  .narrow-text {
-    margin: 1rem auto;
-    max-width: 800px;
-    line-height: 1.6;
-    padding: 0 1rem; /* side padding for small screens */
-  }
+    /* Keep long text comfy to read */
+    .narrow-text {
+      margin: 1rem auto;
+      max-width: 800px;
+      line-height: 1.6;
+      padding: 0 1rem;
+    }
 
-  /* Author line: flexible, wraps and adds space on mobile */
-  .publication-authors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .6rem .9rem; /* row/column gaps */
-  }
-  .publication-authors .author-block { white-space: nowrap; }
+    /* Authors: wrap and space nicely on mobile */
+    .publication-authors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .6rem .9rem;
+    }
+    .publication-authors .author-block { white-space: nowrap; }
 
-  /* Media blocks: videos and images scale to container width */
-  .media-block video,
-  .media-block img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  /* Add consistent spacing between media blocks */
-  .media-block { margin-bottom: 2rem; }
+    /* Media blocks (videos/images) */
+    .media-block { margin-bottom: 2rem; }
+    .media-block video,
+    .media-block img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
-  /* Code blocks scroll horizontally on small screens */
-  pre { overflow-x: auto; }
-  pre code { font-size: 0.9rem; }
+    /* Code blocks */
+    pre { overflow-x: auto; }
+    pre code { font-size: 0.9rem; }
 
-  /* Tighter vertical spacing on small screens */
-  @media (max-width: 768px) {
-    .hero .hero-body { padding: 1.5rem 1rem; }
-    .media-block { margin-bottom: 1.5rem; }
-  }
-</style>
-
+    /* Tighter spacing on small screens */
+    @media (max-width: 768px) {
+      .hero .hero-body { padding: 1.5rem 1rem; }
+      .media-block { margin-bottom: 1.5rem; }
+    }
+  </style>
 </head>
+
 <body>
 
-
+  <!-- HERO HEADER -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title is-size-3-tablet is-size-4-mobile">
-  Large Time Steps in Progressive Synthesis
-</h1>
+              Large Time Steps in Progressive Synthesis
+            </h1>
 
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yuchen Su</a>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Eris Zhange</a>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Kangrui Xue</a>,</span>
-                    <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Doug James</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                  <span class="author-block" style="margin-right: 1rem;">
-                    Department of Computer Science, Stanford University
-                  </span>
-                  <span class="author-block">
-                    Tsinghua University
-                  </span>
-                </div>
-
-
+              <span class="author-block"><a href="#" target="_blank">Yuchen Su</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Eris Zhang</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Kangrui Xue</a>,</span>
+              <span class="author-block"><a href="#" target="_blank">Doug James</a></span>
             </div>
+
+            <div class="is-size-6 publication-authors" style="margin-top:.5rem;">
+              <span class="author-block">Department of Computer Science, Stanford University</span>
+              <span class="author-block">Tsinghua University</span>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- SYMPLECTIC EULER -->
+  <h1 class="title has-text-centered" style="margin-bottom: 1rem;">Symplectic Euler</h1>
+
+  <h2 class="subtitle has-text-centered narrow-text">
+    These are animations and spectra generated with the <strong>Symplectic Euler</strong> method and rendered with 
+    <strong>waveBlender</strong>.<br><br>
+    Listeners are positioned differently in each video.
+  </h2>
+
+  <div class="content has-text-centered narrow-text" style="max-width: 600px;">
+    <p><strong>Simulation Parameters:</strong></p>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>Young’s Modulus: \( 1.0 \times 10^{10} \,\text{Pa} \)</li>
+      <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \,\text{s} \)</li>
+      <li>Plate Thickness: \( 1.0 \times 10^{-3} \,\text{m} \)</li>
+      <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
+      <li>Mesh Resolution: 1000</li>
+    </ul>
   </div>
-</section>
 
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
 
+        <!-- Front view -->
+        <div class="has-text-centered media-block">
+          <video controls playsinline preload="metadata" aria-label="Front listener">
+            <source src="static/videos/tapping_wb_front.mp4" type="video/mp4">
+          </video>
+          <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
+            <img src="static/images/tapping_se_front.png" alt="Simulation snapshot: front listener" loading="lazy">
+            <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
+              Listener positioned at the <strong>front</strong> of the vibrating plate.
+            </figcaption>
+          </figure>
+        </div>
 
-<h1 class="title has-text-centered" style="margin-bottom: 1rem;">
-  Symplectic Euler
-</h1>
+        <!-- Side view -->
+        <div class="has-text-centered media-block">
+          <video controls playsinline preload="metadata" aria-label="Side listener">
+            <source src="static/videos/tapping_wb_side.mp4" type="video/mp4">
+          </video>
+          <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
+            <img src="static/images/tapping_se_side.png" alt="Simulation snapshot: side listener" loading="lazy">
+            <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
+              Listener positioned at <strong>one side</strong> of the vibrating plate.
+            </figcaption>
+          </figure>
+        </div>
 
-<h2 class="subtitle has-text-centered" style="margin: 1.5rem auto; max-width: 800px; line-height: 1.6;">
-  These are animations and spectra generated with the 
-  <strong>Symplectic Euler</strong> method and rendered with 
-  <strong>waveBlender</strong>. <br><br>
-  Listeners are positioned differently in each video.
-</h2>
+        <!-- No damping -->
+        <div class="has-text-centered media-block">
+          <video controls playsinline preload="metadata" aria-label="No damping (energy conservation)">
+            <source src="static/videos/tapping_forward_final_web.mp4" type="video/mp4">
+          </video>
+          <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
+            <img src="static/images/tapping_forward_final.png" alt="Simulation snapshot: no damping" loading="lazy">
+            <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
+              Simulation <strong>without damping</strong>, showing energy conservation of the Symplectic Euler method.
+            </figcaption>
+          </figure>
+        </div>
 
-<div class="content has-text-centered" style="margin: 1rem auto; max-width: 600px; line-height: 1.8;">
-  <p><strong>Simulation Parameters:</strong></p>
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    <li>Young’s Modulus: \( 1.0 \times 10^{10} \,\text{Pa} \)</li>
-    <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \,\text{s} \)</li>
-    <li>Plate Thickness: \( 1.0 \times 10^{-3} \,\text{m} \)</li>
-    <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
-    <li>Mesh Resolution: 1000</li>
-  </ul>
-</div>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <!-- Front view -->
-      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
-        <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
-          <source src="static/videos/tapping_wb_front.mp4" type="video/mp4">
-        </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
-          <img src="static/images/tapping_se_front.png" 
-               alt="Simulation snapshot: front listener" 
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
-            Listener positioned at the <strong>front</strong> of the vibrating plate.
-          </figcaption>
-        </figure>
       </div>
-
-      <!-- Side view -->
-      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
-        <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
-          <source src="static/videos/tapping_wb_side.mp4" type="video/mp4">
-        </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
-          <img src="static/images/tapping_se_side.png" 
-               alt="Simulation snapshot: side listener" 
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
-            Listener positioned at <strong>one side</strong> of the vibrating plate.
-          </figcaption>
-        </figure>
-      </div>
-
-      <!-- No damping -->
-      <div class="has-text-centered">
-        <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
-          <source src="static/videos/tapping_forward_final_web.mp4" type="video/mp4">
-        </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
-          <img src="static/images/tapping_forward_final.png" 
-               alt="Simulation snapshot: no damping" 
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
-            Simulation <strong>without damping</strong>, showing energy conservation of the Symplectic Euler method.
-          </figcaption>
-        </figure>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
+
 
 <!-- End Symplectic Euler section -->
 
