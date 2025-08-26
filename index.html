@@ -183,11 +183,14 @@
 
 <!-- End Symplectic Euler section -->
 
+<!-- End Symplectic Euler section -->
+
+<!-- ======================= Implicit Euler ======================= -->
 <h1 class="title has-text-centered" style="margin-bottom: 1rem;">
   Implicit Euler
 </h1>
 
-<h2 class="subtitle has-text-centered" style="margin: 1.5rem auto; max-width: 800px; line-height: 1.6;">
+<h2 class="subtitle has-text-centered narrow-text">
   These are animations and spectra generated with the 
   <strong>Implicit Euler</strong> method, which introduces strong numerical damping.
 </h2>
@@ -197,15 +200,14 @@
     <div class="hero-body">
 
       <!-- Back view -->
-      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
-        <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
+      <div class="has-text-centered media-block">
+        <video controls playsinline preload="metadata" aria-label="Back listener (Implicit Euler)">
           <source src="static/videos/tapping_back_final_web.mp4" type="video/mp4">
         </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+        <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
           <img src="static/images/tapping_back.png" 
-               alt="Simulation snapshot: back listener" 
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+               alt="Simulation snapshot: back listener" loading="lazy">
+          <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
             Same tapping example as in Symplectic Euler, with identical parameters. <br>
             No artificial damping, but significant <strong>numerical damping</strong> occurs.
           </figcaption>
@@ -213,30 +215,28 @@
       </div>
 
       <!-- Ball -->
-      <div class="has-text-centered" style="margin-bottom: 2.5rem;">
-        <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
+      <div class="has-text-centered media-block">
+        <video controls playsinline preload="metadata" aria-label="Ball falling (Implicit Euler)">
           <source src="static/videos/ball.mp4" type="video/mp4">
         </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+        <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
           <img src="static/images/ball.png" 
-               alt="Simulation snapshot: ball falling" 
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+               alt="Simulation snapshot: ball falling" loading="lazy">
+          <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
             A <strong>ball falling</strong> example, producing audible bouncing sounds.
           </figcaption>
         </figure>
       </div>
 
       <!-- Bowl -->
-      <div class="has-text-centered">
-        <video controls style="max-width:60%; border-radius:8px; margin-bottom: 1rem;">
+      <div class="has-text-centered media-block">
+        <video controls playsinline preload="metadata" aria-label="Bowl falling (Implicit Euler)">
           <source src="static/videos/bowl.mp4" type="video/mp4">
         </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+        <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
           <img src="static/images/bowl.png" 
-               alt="Simulation snapshot: bowl falling" 
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+               alt="Simulation snapshot: bowl falling" loading="lazy">
+          <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
             A <strong>bowl falling</strong> example, producing numerous clicking sounds.
           </figcaption>
         </figure>
@@ -246,6 +246,7 @@
   </div>
 </section>
 
+<!-- =================== Membrane Energy Reduction =================== -->
 <h1 class="title has-text-centered" style="margin-bottom: 1rem;">
   Membrane Energy Reduction
 </h1>
@@ -253,51 +254,41 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <div class="content has-text-centered" style="margin: 1rem auto; max-width: 600px; line-height: 1.8;">
-      <p><strong>Simulation Parameters:</strong></p>
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        <li>Young’s Modulus: \( 1.0 \times 10^{10} \,\text{Pa} \)</li>
-        <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \,\text{s} \)</li>
-        <li>Plate Thickness: \( 1.0 \times 10^{-3} \,\text{m} \)</li>
-        <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
-        <li>Mesh Resolution: 1000</li>
-      </ul>
-    </div>
+
+      <div class="content has-text-centered narrow-text" style="max-width: 600px;">
+        <p><strong>Simulation Parameters:</strong></p>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li>Young’s Modulus: \( 1.0 \times 10^{10} \,\text{Pa} \)</li>
+          <li>Time Step (\( \Delta t \)): \( 2.26 \times 10^{-6} \,\text{s} \)</li>
+          <li>Plate Thickness: \( 1.0 \times 10^{-3} \,\text{m} \)</li>
+          <li>Poisson’s Ratio (\( \nu \)): 0.33</li>
+          <li>Mesh Resolution: 1000</li>
+        </ul>
+      </div>
 
       <!-- Standard membrane energy -->
-            <div class="has-text-centered" style="margin-bottom: 2.5rem;">
-        <video controls playsinline preload="metadata" aria-label="Symplectic Euler with standard membrane energy"
-               style="max-width:70%; border-radius:8px; margin-bottom: 1rem;">
+      <div class="has-text-centered media-block">
+        <video controls playsinline preload="metadata" aria-label="Standard membrane energy">
           <source src="static/videos/tapping_normal_combine.mp4" type="video/mp4">
         </video>
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+        <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
           <img src="static/images/tapping_normal.png"
-               alt="Snapshot: Symplectic Euler with standard membrane energy"
-               loading="lazy"
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered" style="margin-top: 0.8rem; font-style: italic;">
+               alt="Symplectic Euler with standard membrane energy" loading="lazy">
+          <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
             Symplectic Euler with <strong>standard membrane energy</strong>.
           </figcaption>
         </figure>
       </div>
 
-
-    
-
       <!-- Reduced membrane energy -->
-      <div class="has-text-centered">
-        <video controls playsinline preload="metadata" aria-label="Membrane energy reduced to one percent"
-               style="max-width:70%; border-radius:8px; margin-bottom: 1rem;">
+      <div class="has-text-centered media-block">
+        <video controls playsinline preload="metadata" aria-label="Membrane energy reduced to one percent">
           <source src="static/videos/tapping_reduce_combine.mp4" type="video/mp4">
         </video>
-
-        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+        <figure class="image" style="max-width: 700px; margin: 0.8rem auto 0;">
           <img src="static/images/tapping_reduce.png"
-               alt="Snapshot: membrane energy reduced to one percent of the standard setting"
-               loading="lazy"
-               style="max-width:100%; border-radius:8px;">
-          <figcaption class="has-text-centered"
-                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
+               alt="Membrane energy reduced to one percent of standard setting" loading="lazy">
+          <figcaption class="has-text-centered" style="margin-top: 0.6rem; font-style: italic;">
             Membrane energy <strong>reduced to 1%</strong> of the standard setting.
           </figcaption>
         </figure>
@@ -307,32 +298,36 @@
   </div>
 </section>
 
-
-
+<!-- =========================== References =========================== -->
 <section class="section" id="Reference">
   <div class="container is-max-desktop content">
-    <h2 class="title">Reference</h2>
-    <p class="is-size-5">
-      Zhang, Jiayi Eris, James, Doug L., & Kaufman, Danny M. (2024). 
-      <em>Progressive Dynamics for Cloth and Shell Animation.</em> 
-      <strong>ACM Transactions on Graphics (TOG)</strong>, 43(4), 1–18. 
-      ACM New York, NY, USA.
-    </p>
-    <p class="is-size-5">
-    Minchen Li, Danny M. Kaufman, and Chenfanfu Jiang. 2021. 
-    Codimensional incremental potential contact. ACM Trans. Graph. 40, 4, Article 170 (August 2021), 24 pages. 
-    https://doi.org/10.1145/3450626.3459767
-    </p>
-    <p class="is-size-5">
-    Kangrui Xue, Jui-Hsien Wang, Timothy Langlois, and Doug James. 2024. 
-    WaveBlender: Practical Sound-Source Animation in Blended Domains. 
-    In SIGGRAPH Asia 2024 Conference Papers (SA '24). Association for Computing Machinery, New York, NY, USA, 
-    Article 134, 1–10. https://doi.org/10.1145/3680528.3687696
-    </p>
-    <p class="is-size-5">
-    Jeffrey N. Chadwick, Steven S. An, and Doug L. James. 2009. Harmonic shells: a practical nonlinear sound 
-    model for near-rigid thin shells. ACM Trans. Graph. 28, 5 (December 2009), 1–10. https://doi.org/10.1145/1618452.1618465
-    </p>
+    <h2 class="title has-text-centered">References</h2>
+    <ol class="narrow-text">
+      <li class="is-size-5">
+        Zhang, J. E., James, D. L., &amp; Kaufman, D. M. (2024).
+        <em>Progressive Dynamics for Cloth and Shell Animation.</em>
+        <strong>ACM Transactions on Graphics (TOG)</strong>, 43(4), 1–18.
+        <span>ACM, New York, NY.</span>
+      </li>
+      <li class="is-size-5">
+        Li, M., Kaufman, D. M., &amp; Jiang, C. (2021).
+        Codimensional incremental potential contact.
+        <strong>ACM Transactions on Graphics</strong>, 40(4), Article 170 (24 pages).
+        <a href="https://doi.org/10.1145/3450626.3459767" target="_blank" rel="noopener">https://doi.org/10.1145/3450626.3459767</a>
+      </li>
+      <li class="is-size-5">
+        Xue, K., Wang, J.-H., Langlois, T., &amp; James, D. (2024).
+        WaveBlender: Practical Sound-Source Animation in Blended Domains.
+        In <em>SIGGRAPH Asia 2024 Conference Papers</em> (SA ’24), Article 134, 1–10.
+        <a href="https://doi.org/10.1145/3680528.3687696" target="_blank" rel="noopener">https://doi.org/10.1145/3680528.3687696</a>
+      </li>
+      <li class="is-size-5">
+        Chadwick, J. N., An, S. S., &amp; James, D. L. (2009).
+        Harmonic shells: A practical nonlinear sound model for near-rigid thin shells.
+        <strong>ACM Transactions on Graphics</strong>, 28(5), 1–10.
+        <a href="https://doi.org/10.1145/1618452.1618465" target="_blank" rel="noopener">https://doi.org/10.1145/1618452.1618465</a>
+      </li>
+    </ol>
   </div>
 </section>
 
