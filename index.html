@@ -210,48 +210,69 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" controls height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/ball.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-  
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
-      <video controls style="max-width:500px; width:100%; border-radius:8px;">
-        <source src="static/videos/tapping_back_final_web.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+<h1 class="title has-text-centered" style="margin-bottom: 1rem;">
+  Implicit Euler
+</h1>
+<h2 class="subtitle has-text-centered" style="margin: 1.5rem auto; max-width: 800px; line-height: 1.6;">
+  These are animations and spectra generated with the 
+  <strong>Implicit Euler</strong> method, which has much numerical dampings.
+</h2>
+
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
-      <video controls style="max-width:500px; width:100%; border-radius:8px;">
-        <source src="static/videos/tapping_forward_final_web.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+    <div class="hero-body">
+
+      <!-- Front view -->
+      <div class="has-text-centered">
+        <video controls style="max-width:100%; border-radius:8px; margin-bottom: 1rem;">
+          <source src="static/videos/tapping_back_final_web.mp4" type="video/mp4">
+        </video>
+        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+          <img src="static/images/tapping_back.png" 
+               alt="Simulation snapshot (front listener)" 
+               style="max-width:100%; border-radius:8px;">
+          <figcaption class="has-text-centered" 
+                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
+            The same tapping example having the same paramter with the previous Symplectic Euler method.
+            No artificial damping here, but numerical damping is significant.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="has-text-centered">
+        <video controls style="max-width:100%; border-radius:8px; margin-bottom: 1rem;">
+          <source src="static/videos/ball.mp4" type="video/mp4">
+        </video>
+        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+          <img src="static/images/ball.png" 
+               alt="Simulation snapshot (front listener)" 
+               style="max-width:100%; border-radius:8px;">
+          <figcaption class="has-text-centered" 
+                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
+            A ball falling example. The bouncing sound are heard.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="has-text-centered">
+        <video controls style="max-width:100%; border-radius:8px; margin-bottom: 1rem;">
+          <source src="static/videos/bowl.mp4" type="video/mp4">
+        </video>
+        <figure class="image" style="max-width: 700px; margin: 0 auto;">
+          <img src="static/images/bowl.png" 
+               alt="Simulation snapshot (front listener)" 
+               style="max-width:100%; border-radius:8px;">
+          <figcaption class="has-text-centered" 
+                      style="margin-top: 0.8rem; font-style: italic; line-height: 1.5;">
+            A bowl falling example, numerous clicking sound are heard.
+          </figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
 
 
 <!--BibTex citation -->
